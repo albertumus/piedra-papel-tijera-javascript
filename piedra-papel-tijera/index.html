@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>PPTLG Game</title>
+  <link rel="shortcut icon" href="img/favicon-ppt.png" type="image/png">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Roboto+Condensed" rel="stylesheet">
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Fuentes personalizadas -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Plugin CSS -->
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <!-- Hoja de Estilo Principal -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body id="home">
+
+  <nav id="mainNav">
+    <div class="nav-wrapper">
+      Piedra | Papel | Tijera | Lagarto | Spok
+    </div>
+  </nav>
+
+  <section class="bg-azul" id='juego'>
+    <div class="container text-center">
+      <h3>
+    <span class="" id="mensajeInicio">¡Bienvenido! ¿Quieres jugar? ¡Elige la primera opción y disfruta!</span>
+    </h3>
+    <div class="container ">
+      <div class="row my-auto mx-auto text-center">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2>
+            <span class="text-center" id="eleccionJugadorSpan"></span>
+            <span class="text-center mr-2" style="font-size:10px" id="jugadorSmall"></span>
+            <span class="text-center mr-2" id="ganador"></span></span>
+            <span class="text-center" id="eleccionMaquinaSpan"></span>
+            <span class="text-center" style="font-size:10px" id="maquinaSmall"></span>
+          </div>
+        </h2>
+      </div>
+    </div>
+    </div>
+
+
+    <hr class="mb-3">
+
+    <div id="puntuaciones_partida" class="container col-lg-8  mb-5">
+      <div class="row">
+      <h4 class="text-center mx-auto">Jugador: <span id='spanPuntosJugador'>0</span></h4>
+      <h4 class="text-center mx-auto">Máquina: <span id='spanPuntosMaquina'>0</span></h4>
+      </div>
+    </div>
+
+    <div class="container mt-3 col-lg-8 text-center">
+      <div class="row mx-auto mt-3 ">
+        <div class="col-lg-3 mt-3  col-sm-6 mx-auto">
+          <button class="btn botonJuego" type="button" name="papel" id="papel"><i class="fas  fa-3x fa-hand-paper"></i></button>
+        </div>
+        <div class="col-lg-3 mt-3 col-sm-6 mx-auto">
+          <button class="btn botonJuego" type="button" name="tijeras" id="tijeras"><i class="fas fa-3x fa-hand-scissors"></i></button>
+        </div>
+        <div class="col-lg-3 mt-3 col-sm-6 mx-auto text-center">
+          <button class="btn botonJuego" type="button" name="piedra" id="piedra"><i class="fas fa-3x fa-hand-rock"></i></button>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-lg-2 col-sm-6 ml-0 mr-0 mt-3 mx-auto text-center">
+          <button class="btn botonJuego" type="button" name="lagarto" id="lagarto"><i class="fas fa-3x fa-hand-lizard"></i></button>
+        </div>
+        <div class="col-lg-2 col-sm-6 mt-3 mx-auto text-center">
+          <button class="btn botonJuego" type="button" name="spok" id="spok"><i class="fas fa-3x fa-hand-spock"></i></button>
+        </div>
+      </div>
+    </div>
+
+<div class="container text-center mt-5">
+  <button class="btn call-to-action disable" type="button" name="button"><h4>¡Haz tu movimiento!</h4></button><br>
+</div>
+
+  </section>
+
+  <section id="about" class="bg-light">
+    <div class="container bg-pig-white text-center">
+      <h1>Sobre el juego</h1>
+      <hr class="my-4">
+      <p>¡Hola y bienvenido! Este proyecto se trata de página web donde puedes jugar tantas partidas de Piedra, Papel, Tijera, Lagarto, Spok como desees. La puntuación
+     guarda localmente. Por favor, si te gusta el juego, ¡comparte e invita a tus amigos! El proyecto se ha creado con jQuery y
+    JavaScript para la lógica del juego, así como Bootstrap para el diseño. ¡Disfrútalo!</p>
+    </div>
+  </section>
+
+<footer class="bg-azul">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-lg-12">
+      <a href="https://github.com/albertumus"><i class="fab fa-1x fa-github p-2 share"></i></a>
+      </div>
+
+    </div>
+  </div>
+    <div class="container text-center">
+      Made with <i class="fas fa-1x fa-heart corazon-footer"></i> from Guadalajara, Spain
+    </div>
+
+
+</footer>
+
+  <!--
+    <div class="pop-up" id="pop-up">
+      <div class="container contenido-pop-up">
+        <h1>Ey que tal</h1>
+        <button type="button" name="button" id="cerrar-pop-up">Cerrar</button>
+      </div>
+    </div>-->
+
+  <!-- Footer -->
+
+
+  <!--
+<footer class="page-footer" id="footer">
+  <div class="footer-copyright">
+    <div class="container text-center">
+      Made with <i class="fas fa-1x fa-heart corazon-footer"></i> from Guadalajara, Spain (Yes, in Spain there is another Guadalajara)
+    </div>
+  </div>
+</footer>-->
+
+
+
+
+  <!-- Scripts Jquery y Bootstrap -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin de Scroll Reveal y magnific pop-up -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Script Personalizados para la web -->
+  <script src="js/creative.min.js"></script>
+  <script type="text/javascript" src="js/functions.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>
